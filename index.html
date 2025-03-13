@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo-container">
+      <img class="logo" src="src/logo_white.svg" alt="VISUS Logo">
+    </div>
+    <h2>QR Code Generator</h2>
+    <div class="form-group">
+      <label for="urlInput">URL eingeben:</label>
+      <textarea id="urlInput" rows="1" placeholder="https://www.example.com"></textarea>
+    </div>
+    <button id="generateBtn">QR Code generieren</button>
+    <div id="qr-code"></div>
+    <button id="downloadBtn" style="display: none;">QR Code als JPG speichern</button>
+  </div>
+
+  <!-- Lokale QR Code Bibliothek -->
+  <script src="qrcode.min.js"></script>
+  <!-- Ausgelagertes Skript -->
+  <script src="script.js"></script>
+</body>
+</html>
